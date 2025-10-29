@@ -301,7 +301,7 @@ def similarity_search(
             where ie.id != {config.id}
             and array_cosine_similarity(ie.embedding, q.query_vec) > {config.similarity_score}
             order by array_cosine_similarity(ie.embedding, q.query_vec) desc
-            limit {config.num_results};
+            limit {config.num_results}
         """).fetchall()
 
         return dg.MaterializeResult(
