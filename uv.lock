@@ -2498,7 +2498,9 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "dagster" },
+    { name = "dagster-dg-cli" },
     { name = "dagster-duckdb" },
+    { name = "dagster-webserver" },
     { name = "pandas" },
     { name = "pydantic" },
     { name = "requests" },
@@ -2507,8 +2509,6 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
-    { name = "dagster-dg-cli" },
-    { name = "dagster-webserver" },
     { name = "pytest" },
     { name = "ruff" },
 ]
@@ -2516,7 +2516,9 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "dagster", specifier = "==1.11.14" },
+    { name = "dagster-dg-cli" },
     { name = "dagster-duckdb" },
+    { name = "dagster-webserver" },
     { name = "pandas" },
     { name = "pydantic" },
     { name = "requests" },
@@ -2525,8 +2527,6 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "dagster-dg-cli" },
-    { name = "dagster-webserver" },
     { name = "pytest" },
     { name = "ruff" },
 ]
