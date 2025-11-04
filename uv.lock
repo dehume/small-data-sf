@@ -2507,6 +2507,12 @@ dependencies = [
     { name = "sentence-transformers" },
 ]
 
+[package.optional-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "ruff" },
+]
+
 [package.dev-dependencies]
 dev = [
     { name = "pytest" },
@@ -2521,7 +2527,9 @@ requires-dist = [
     { name = "dagster-webserver" },
     { name = "pandas" },
     { name = "pydantic" },
+    { name = "pytest", marker = "extra == 'dev'" },
     { name = "requests" },
+    { name = "ruff", marker = "extra == 'dev'" },
     { name = "sentence-transformers" },
 ]
 
